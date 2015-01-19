@@ -1,0 +1,11 @@
+#iconContainer {
+	width: 40vw;
+	padding-top: 100px;
+	margin: 0 auto;
+}
+
+.social a img {
+	height: 100px;
+	width: 100px;
+}
+

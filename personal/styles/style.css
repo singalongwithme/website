@@ -1,0 +1,110 @@
+.tabsdemoStaticTabs {
+  /*
+ * Animation styles
+ */ }
+  .tabsdemoStaticTabs #tab1-content {
+    text-align: center;
+    background-color: #3F51B5;
+    margin: 0 auto;}
+  .tabsdemoStaticTabs #tab1-content .container {
+    margin: 0 auto;
+    width: 55vw;}
+  .tabsdemoStaticTabs #tab1-content .container #first {
+    /*line-height: 100vh;*/
+  }
+  .tabsdemoStaticTabs #tab1-content .container #first #pictureContainer {
+    padding-top: 3px;
+    height: 206px;
+    width: 209px;
+    background-color: white;
+    border-radius: 500px;
+  }
+  .tabsdemoStaticTabs #tab1-content .container #second {
+    line-height: 100vh;
+  }
+  .tabsdemoStaticTabs #tab1-content .container #first #picture {
+    height: 200px;
+    width: 200px;
+    border-radius: 500px;
+    /*line-height: 400px;*/
+  }
+   .tabsdemoStaticTabs #tab1-content .container #second #mainInfo {
+    /*margin: 0 auto;*/
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .tabsdemoStaticTabs #tab2-content {
+    background-color: #673AB7; }
+  .tabsdemoStaticTabs #tab3-content {
+    background-color: #00796B; }
+  .tabsdemoStaticTabs #tab4-content {
+    background-color: #ff5722;}
+  .tabsdemoStaticTabs #tab5-content {
+    background-color: #ff5722;}
+  .tabsdemoStaticTabs .tabpanel-container {
+    display: block;
+    position: relative;
+    background: white;
+    border: 0px solid black;
+    height: 80vh;
+    overflow: hidden; }
+  .tabsdemoStaticTabs [role="tabpanel"] {
+    color: white;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+    transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+    position: absolute; }
+  .tabsdemoStaticTabs [role="tabpanel"].ng-leave.ng-leave-active, .tabsdemoStaticTabs [role="tabpanel"].ng-enter {
+    top: -80vh; }
+  .tabsdemoStaticTabs [role="tabpanel"].ng-leave, .tabsdemoStaticTabs [role="tabpanel"].ng-enter.ng-enter-active {
+    top: 0; }
+  .tabsdemoStaticTabs [role="tabpanel"].ng-leave {
+    z-index: 100; }
+  .tabsdemoStaticTabs .tabpanel-container [role="tabpanel"] {
+    padding: 20px; }
+  .tabsdemoStaticTabs .after-tabs-area {
+    padding: 25px; }
+  .tabsdemoStaticTabs .after-tabs-area > span {
+    margin-top: 25px;
+    padding-right: 15px;
+    vertical-align: middle;
+    line-height: 30px;
+    height: 35px; }
+  .tabsdemoStaticTabs .after-tabs-area > md-checkbox {
+    margin-top: 26px;
+    margin-left: 0px; }
+  .tabsdemoStaticTabs .md-header {
+    background-color: #1976D2 !important; }
+  .tabsdemoStaticTabs md-tab {
+    color: #90caf9 !important; }
+  .tabsdemoStaticTabs md-tab.active, .tabsdemoStaticTabs md-tab:focus {
+    color: white !important; }
+  .tabsdemoStaticTabs md-tab[disabled] {
+    opacity: 0.5; }
+  .tabsdemoStaticTabs .md-header .md-ripple {
+    border-color: #FFFF8D !important; }
+  .tabsdemoStaticTabs md-tabs-ink-bar {
+    background-color: #FFFF8D !important; }
+
+@font-face {
+  font-family: heff;
+  src: url("Heasafel.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: arena;
+  src: url('../assets/fonts/January Threed.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+#banner {
+  font-family: arena;
+  text-align: center;
+  font-size: 56px;
+  margin: 0 auto;
+  /*padding: 7px;*/
+}

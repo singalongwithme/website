@@ -1,0 +1,52 @@
+.projectsContainer {
+	width: 90vw;
+	/*background-color: red;*/
+	margin: 0 auto;
+}
+
+#AYAR {
+	/*background-color: white;*/
+	height: 460px;
+	/*margin: 10px;*/
+}
+
+.background {
+	position: absolute;
+	background-color: white;
+	height: 450px;
+	width: 350px;
+	opacity: 0;
+	-webkit-transition: all ease-in .5s;
+	transition: all ease-in .5s;
+}
+#AYARpicture {
+	margin-right: 10px;
+	height: 450px;
+	width: 350px;
+}
+
+#AYARinfo {
+	color: black;
+	position: relative;
+	text-align: center;
+	top: 35px;
+	height: 200px;
+	/*width: 350px;*/
+}
+
+.divider {
+	height: 450px;
+	background-color: transparent;
+}
+
+#AYARpicture:hover {
+	/*display: hidden;*/
+}
+
+.background:hover {
+	/*display: inline;*/
+	opacity: 0.9;
+}
+
+#AYARgit img:hover {
+}

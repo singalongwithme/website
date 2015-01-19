@@ -1,0 +1,105 @@
+<h1 id="banner">Hi. I'm Chris</h1>
+<div ng-controller="MainController" class="tabsdemoStaticTabs">
+    <md-tabs class="md-accent" md-selected="data.selectedIndex">
+      <md-tab id="tab1" aria-controls="tab1-content">
+        Home
+      </md-tab>
+      <md-tab id="tab2" aria-controls="tab2-content" ng-disabled="data.secondLocked">
+        Projects
+      </md-tab>
+      <md-tab id="tab3" aria-controls="tab3-content">
+        Hobbies
+      </md-tab>
+      <md-tab id="tab4" aria-controls="tab4-content">
+        Contact
+      </md-tab>
+     <!--  <md-tab id="tab5" aria-controls="tab5-content">
+        Contact
+      </md-tab> -->
+    </md-tabs>
+    <ng-switch on="data.selectedIndex" class="tabpanel-container">
+        <div role="tabpanel" id="tab1-content" aria-labelledby="tab1" ng-switch-when="0" md-swipe-left="next()" md-swipe-right="previous()" layout="row">
+            <div style="padding-top: 70px" class="container" layout="row">
+            <div id="first" flex="30">
+              <div id="pictureContainer">
+              <img id="picture" src="assets/pictures/profile.jpg" />
+              </div>
+            </div>
+            <div id="second" flex="70">
+            <p id="mainInfo">My name is Christopher Singhavong and I seldom dream in JavaScript. I appreciate an awesome user-interface almost as much as clean, written code. I take pride in the code I write.</p>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" id="tab2-content" aria-labelledby="tab2" ng-switch-when="1" md-swipe-left="next()" md-swipe-right="previous()">
+          <div class="projectsContainer" layout="row">
+            <div id="AYAR" flex="30">
+              <div class="background">
+                <div id="AYARinfo">
+                  <h2 style="text-decoration: underline">AYAR?</h2>
+                  <p style="padding: 10px">Are You A Robot is a chat-based game that utilized a custom-built artifical intelligent robot that used text-parsing, markov chains, and machine learning to construct coherent sentences based on user-prompted quesitons.</p>
+                  <a id="AYARgit" href="http://github.com/areyouarobot/areyouarobot" target="_blank"><img src="assets/pictures/smallgit.png"/></a>
+                </div>
+              </div>
+              <img id="AYARpicture" src="assets/pictures/ayar.png" />
+            </div>
+            <div class="divider" flex="1"></div>
+            <div id="AYAR" flex="30">
+              <div class="background">
+                <div id="AYARinfo">
+                  <h2 style="text-decoration: underline">Flash!</h2>
+                  <p style="padding: 10px">Flash is an application that was made to serve as a studying tool using classic index cards.</p>
+                  <a id="AYARgit" href="http://github.com/singalongwithme/flash" target="_blank"><img src="assets/pictures/smallgit.png"/></a>
+                </div>
+              </div>
+              <img id="AYARpicture" src="assets/pictures/flash.png" />
+            </div>
+            <div class="divider" flex="1"></div>
+            <div id="AYAR" flex="30">
+              <div style="width: 300px" class="background">
+                <div id="AYARinfo">
+                  <h2 style="text-decoration: underline">Closebuy</h2>
+                  <p style="padding: 10px">Closebuy is a mobile-commerce application that used a Tinder-like interface to create a marketplace to buy and sell.</p>
+                  <a id="AYARgit" href="http://github.com/closebuy/closebuy" target="_blank"><img src="assets/pictures/smallgit.png"/></a>
+                </div>
+              </div>
+              <img style="width: 300px" id="AYARpicture" src="assets/pictures/closebuy.png" />
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" id="tab3-content" aria-labelledby="tab3" ng-switch-when="2" md-swipe-left="next()" md-swipe-right="previous()">
+          <div id="hobbies">
+            <md-content style="background-color: transparent">
+              <md-list>
+                <md-item ng-repeat="item in todos">
+                  <md-item-content>
+                    <div class="md-tile-left">
+                      <img ng-src="{{item.face}}" class="face" alt="{{item.who}}">
+                    </div>
+                    <div class="md-tile-content">
+                      <h3 id="hobbyTitle">{{item.what}}</h3>
+                      <h4 id="hobbyNotes">{{item.who}}</h4>
+                    </div>
+                  </md-item-content>
+                </md-item>
+              </md-list>
+            </md-content>
+          </div>
+        </div>
+        <div role="tabpanel" id="tab4-content" aria-labelledby="tab4" ng-switch-when="3" md-swipe-left="next()" md-swipe-right="previous()">
+          <div id="iconContainer" layout="row">
+            <div class="social" flex="25">
+              <a href="http://chrissing.azurewebsites.net" target="_blank"><img src="assets/pictures/blog.png" /></a>
+            </div>
+            <div class="social" flex="25">
+              <a href="http://github.com/singalongwithme" target="_blank"><img src="assets/pictures/git.png"/></a>
+            </div>
+            <div class="social" flex="25">
+              <a href="http://linkedin.com/in/csinghavong" target="_blank"><img src="assets/pictures/linkedin.png" /></a>
+            </div>
+            <div class="social" flex="25">
+              <a href="mailto:csinghavong@gmail.com" target="_blank"><img src="assets/pictures/email.png"/></a>
+            </div>
+          </div>
+        </div>
+    </ng-switch>
+</div>

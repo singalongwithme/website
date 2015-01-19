@@ -1,0 +1,20 @@
+#hobbies {
+	width: 45vw;
+	margin: 0 auto;
+}
+
+#hobbyTitle {
+	font-size: 28px;
+	text-decoration: underline;
+}
+
+#hobbyNotes {
+	font-size: 20px;
+}
+.face {
+  border-radius: 60px;
+  border: 1px solid #ddd;
+  width: 120px;
+  height: 120px;
+  margin: 16px;
+}
