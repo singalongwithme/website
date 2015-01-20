@@ -8,11 +8,11 @@
         Projects
       </md-tab>
       <md-tab id="tab3" aria-controls="tab3-content">
-        Hobbies
-      </md-tab>
-      <md-tab id="tab4" aria-controls="tab4-content">
         Contact
       </md-tab>
+      <!-- <md-tab id="tab4" aria-controls="tab4-content">
+        Contact
+      </md-tab> -->
      <!--  <md-tab id="tab5" aria-controls="tab5-content">
         Contact
       </md-tab> -->
@@ -26,7 +26,7 @@
               </div>
             </div>
             <div id="second" flex="70">
-            <p id="mainInfo">My name is Christopher Singhavong and I seldom dream in JavaScript. I appreciate an awesome user-interface almost as much as clean, written code. I take pride in the code I write.</p>
+            <p id="mainInfo">Christopher Singhavong. Software Engineer. 22. I appreciate an awesome user-interface almost as much as clean-written code. My code is my pride; I dream in Javascript on occasion.</p>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@
               <div class="background">
                 <div id="AYARinfo">
                   <h2 style="text-decoration: underline">AYAR?</h2>
-                  <p style="padding: 10px">Are You A Robot is a chat-based game that utilized a custom-built artifical intelligent robot that used text-parsing, markov chains, and machine learning to construct coherent sentences based on user-prompted quesitons.</p>
+                  <p style="padding: 10px">Are You A Robot is a chat-based game that features a custom-built, artifically intelligent robot that can use text-parsing, markov chains, and machine learning to construct sentences based on user-prompted quesitons.</p>
                   <a id="AYARgit" href="http://github.com/areyouarobot/areyouarobot" target="_blank"><img src="assets/pictures/smallgit.png"/></a>
                 </div>
               </div>
@@ -47,7 +47,7 @@
               <div class="background">
                 <div id="AYARinfo">
                   <h2 style="text-decoration: underline">Flash!</h2>
-                  <p style="padding: 10px">Flash is an application that was made to serve as a studying tool using classic index cards.</p>
+                  <p style="padding: 10px">Flash is a studying tool designed to imitate classic index cards.</p>
                   <a id="AYARgit" href="http://github.com/singalongwithme/flash" target="_blank"><img src="assets/pictures/smallgit.png"/></a>
                 </div>
               </div>
@@ -58,7 +58,7 @@
               <div style="width: 300px" class="background">
                 <div id="AYARinfo">
                   <h2 style="text-decoration: underline">Closebuy</h2>
-                  <p style="padding: 10px">Closebuy is a mobile-commerce application that used a Tinder-like interface to create a marketplace to buy and sell.</p>
+                  <p style="padding: 10px">Closebuy is a mobile marketplace that uses a Tinder-like interface to buy and sell.</p>
                   <a id="AYARgit" href="http://github.com/closebuy/closebuy" target="_blank"><img src="assets/pictures/smallgit.png"/></a>
                 </div>
               </div>
@@ -66,7 +66,7 @@
             </div>
           </div>
         </div>
-        <div role="tabpanel" id="tab3-content" aria-labelledby="tab3" ng-switch-when="2" md-swipe-left="next()" md-swipe-right="previous()">
+        <!-- <div role="tabpanel" id="tab3-content" aria-labelledby="tab3" ng-switch-when="2" md-swipe-left="next()" md-swipe-right="previous()">
           <div id="hobbies">
             <md-content style="background-color: transparent">
               <md-list>
@@ -84,20 +84,28 @@
               </md-list>
             </md-content>
           </div>
-        </div>
-        <div role="tabpanel" id="tab4-content" aria-labelledby="tab4" ng-switch-when="3" md-swipe-left="next()" md-swipe-right="previous()">
+        </div> -->
+        <div role="tabpanel" id="tab3-content" aria-labelledby="tab3" ng-switch-when="2" md-swipe-left="next()" md-swipe-right="previous()">
           <div id="iconContainer" layout="row">
             <div class="social" flex="25">
-              <a href="http://chrissing.azurewebsites.net" target="_blank"><img src="assets/pictures/blog.png" /></a>
+              <a href="http://chrissing.azurewebsites.net" target="_blank"><img src="assets/pictures/blog.png" /><md-tooltip>
+                Blog
+              </md-tooltip></a>
             </div>
             <div class="social" flex="25">
-              <a href="http://github.com/singalongwithme" target="_blank"><img src="assets/pictures/git.png"/></a>
+              <a href="http://github.com/singalongwithme" target="_blank"><img src="assets/pictures/git.png"/> <md-tooltip>
+                GitHub
+              </md-tooltip></a>
             </div>
             <div class="social" flex="25">
-              <a href="http://linkedin.com/in/csinghavong" target="_blank"><img src="assets/pictures/linkedin.png" /></a>
+              <a href="http://linkedin.com/in/csinghavong" target="_blank"><img src="assets/pictures/linkedin.png" /><md-tooltip>
+                Linkedin
+              </md-tooltip></a>
             </div>
             <div class="social" flex="25">
-              <a href="mailto:csinghavong@gmail.com" target="_blank"><img src="assets/pictures/email.png"/></a>
+              <a href="mailto:csinghavong@gmail.com" target="_blank"><img src="assets/pictures/email.png"/><md-tooltip>
+                Email
+              </md-tooltip></a>
             </div>
           </div>
         </div>

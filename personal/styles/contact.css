@@ -4,6 +4,9 @@
 	margin: 0 auto;
 }
 
+.social a img:hover {
+	opacity: 0.5;
+}
 .social a img {
 	height: 100px;
 	width: 100px;

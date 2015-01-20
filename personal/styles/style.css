@@ -1,7 +1,5 @@
 .tabsdemoStaticTabs {
-  /*
- * Animation styles
- */ }
+}
   .tabsdemoStaticTabs #tab1-content {
     text-align: center;
     background-color: #3F51B5;
@@ -36,9 +34,9 @@
   .tabsdemoStaticTabs #tab2-content {
     background-color: #673AB7; }
   .tabsdemoStaticTabs #tab3-content {
-    background-color: #00796B; }
+    background-color: #ff5722; }
   .tabsdemoStaticTabs #tab4-content {
-    background-color: #ff5722;}
+    background-color: #00796B;}
   .tabsdemoStaticTabs #tab5-content {
     background-color: #ff5722;}
   .tabsdemoStaticTabs .tabpanel-container {
@@ -46,7 +44,7 @@
     position: relative;
     background: white;
     border: 0px solid black;
-    height: 80vh;
+    height: 100vh;
     overflow: hidden; }
   .tabsdemoStaticTabs [role="tabpanel"] {
     color: white;
@@ -56,7 +54,7 @@
     transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
     position: absolute; }
   .tabsdemoStaticTabs [role="tabpanel"].ng-leave.ng-leave-active, .tabsdemoStaticTabs [role="tabpanel"].ng-enter {
-    top: -80vh; }
+    top: -100vh; }
   .tabsdemoStaticTabs [role="tabpanel"].ng-leave, .tabsdemoStaticTabs [role="tabpanel"].ng-enter.ng-enter-active {
     top: 0; }
   .tabsdemoStaticTabs [role="tabpanel"].ng-leave {

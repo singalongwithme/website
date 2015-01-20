@@ -1,7 +1,8 @@
 .projectsContainer {
-	width: 90vw;
+	width: 70vw;
 	/*background-color: red;*/
 	margin: 0 auto;
+	padding-top: 70px;
 }
 
 #AYAR {
