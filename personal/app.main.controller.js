@@ -5,8 +5,10 @@
 
   .controller('MainController', MainController);
 
-  function MainController($scope){
-    $scope.todos = [
+  function MainController(){
+    var vm = this;
+
+    vm.todos = [
       {
         face : 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl7UQ2N91uExrer8I9Dim_pAqomv9goJbbNCVqn-WlPi8xURau',
         what: 'Basketball',

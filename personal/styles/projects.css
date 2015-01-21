@@ -2,13 +2,15 @@
 	width: 70vw;
 	/*background-color: red;*/
 	margin: 0 auto;
-	padding-top: 70px;
+	padding-top: 90px;
 }
 
-#AYAR {
-	/*background-color: white;*/
+#project {
 	height: 460px;
-	/*margin: 10px;*/
+}
+
+.projectInfo h2 {
+	text-decoration: underline;
 }
 
 .background {
@@ -20,34 +22,20 @@
 	-webkit-transition: all ease-in .5s;
 	transition: all ease-in .5s;
 }
-#AYARpicture {
+.projectPicture {
 	margin-right: 10px;
 	height: 450px;
 	width: 350px;
 }
 
-#AYARinfo {
+.projectInfo {
 	color: black;
 	position: relative;
 	text-align: center;
 	top: 35px;
 	height: 200px;
-	/*width: 350px;*/
-}
-
-.divider {
-	height: 450px;
-	background-color: transparent;
-}
-
-#AYARpicture:hover {
-	/*display: hidden;*/
 }
 
 .background:hover {
-	/*display: inline;*/
 	opacity: 0.9;
-}
-
-#AYARgit img:hover {
 }
