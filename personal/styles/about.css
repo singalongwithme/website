@@ -1,0 +1,30 @@
+#banner {
+  font-family: arena;
+  text-align: center;
+  font-size: 56px;
+  margin: 0 auto;
+}
+
+.staticTabs #tab1-content .container #first #pictureContainer {
+  padding-top: 3px;
+  height: 231px;
+  width: 229px;
+  background-color: white;
+  border-radius: 500px;
+}
+
+.staticTabs #tab1-content .container #second {
+  line-height: 100vh;
+}
+
+.staticTabs #tab1-content .container #first #picture {
+  height: 225px;
+  width: 225px;
+  border-radius: 500px;
+}
+
+.staticTabs #tab1-content .container #second #mainInfo {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+}
