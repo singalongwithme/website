@@ -6,7 +6,12 @@
   .controller('MainController', MainController);
 
   function MainController(){
-    var vm = this;
+  	function parallax() {
+  		var about = document.getElementById('about-me');
+  	  about.style.top = -( window.pageYOffset / 2.5 ) + 342 + 'px'
+  	}
+
+  	window.addEventListener("scroll", parallax, false);
   }
 
 })()
