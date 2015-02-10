@@ -1,91 +1,34 @@
-<h1 id="banner">Hi. I'm Chris</h1>
-
-<div ng-controller="MainController" class="staticTabs">
-  <md-tabs class="md-accent" md-selected="data.selectedIndex">
-    <md-tab id="tab1" aria-controls="tab1-content">
-      Home
-    </md-tab>
-    <md-tab id="tab2" aria-controls="tab2-content" ng-disabled="data.secondLocked">
-      Projects
-    </md-tab>
-    <md-tab id="tab3" aria-controls="tab3-content">
-      Contact
-    </md-tab>
-  </md-tabs>
-<ng-switch on="data.selectedIndex" class="tabpanel-container">
-  <div role="tabpanel" id="tab1-content" aria-labelledby="tab1" ng-switch-when="0" md-swipe-left="next()" md-swipe-right="previous()" layout="row">
-    <div style="padding-top: 100px" class="container">
-      <div id="first" class="col-md-3">
-        <div id="pictureContainer">
-          <img id="picture" src="assets/pictures/profile.jpg" />
-        </div>
-      </div>
-      <div id="second" class="col-md-8 col-md-offset-1">
-        <p id="mainInfo">Christopher Singhavong. Software Engineer. 22. I appreciate an awesome user-interface almost as much as clean-written code. My code is my pride; I dream in Javascript on occasion.</p>
-      </div>
+<header id="header">
+  <div id="about-me" class="animated once bounceInDown">
+    <div id="profile-container">
+      <img id="profile-picture" src="assets/pictures/profile.jpg"></script>
+    </div>
+    <h2 id="name">Christopher Singhavong</h2>
+    <h3 id="title">Software Engineer</h3>
+    <div class="social">
+      <a class="linkedin" href="http://linkedin.com/in/csinghavong"></a>
+      <a class="github" href="http://github.com/singalongwithme"></a>
+      <a class="email" href="mailto:csinghavong@gmail.com"></a>
     </div>
   </div>
-  <div role="tabpanel" id="tab2-content" aria-labelledby="tab2" ng-switch-when="1" md-swipe-left="next()" md-swipe-right="previous()">
-    <div class="projectsContainer container">
-      <div id="project" class="col-md-4">
-        <div class="background">
-          <div class="projectInfo">
-            <h2>AYAR?</h2>
-              <p style="padding: 10px">Are You A Robot is a chat-based game that features a custom-built, artifically intelligent robot that can use text-parsing, markov chains, and machine learning to construct sentences based on user-prompted quesitons.</p>
-              <a id="AYARgit" href="http://github.com/areyouarobot/areyouarobot" target="_blank"><img src="assets/pictures/smallgit.png"/></a>
-          </div>
-        </div>
-        <img class="projectPicture" src="assets/pictures/ayar.png" />
-      </div>
-      <div id="project" class="col-md-4">
-        <div class="background">
-          <div class="projectInfo">
-            <h2>Flash!</h2>
-              <p style="padding: 10px">Flash is a studying tool designed to imitate classic index cards.</p>
-                <a id="AYARgit" href="http://github.com/singalongwithme/flash" target="_blank"><img src="assets/pictures/smallgit.png"/></a>
-          </div>
-        </div>
-        <img class="projectPicture" src="assets/pictures/flash.png" />
-      </div>
-      <div id="project" class="col-md-4">
-        <div style="width: 290px" class="background">
-          <div class="projectInfo">
-            <h2>Closebuy</h2>
-              <p style="padding: 10px">Closebuy is a mobile marketplace that uses a Tinder-like interface to buy and sell.</p>
-                <a id="AYARgit" href="http://github.com/closebuy/closebuy" target="_blank"><img src="assets/pictures/smallgit.png"/></a>
-          </div>
-        </div>
-        <img style="width: 290px" class="projectPicture" src="assets/pictures/closebuy.png" />
-      </div>
-    </div>
-  </div>
-  <div role="tabpanel" id="tab3-content" aria-labelledby="tab3" ng-switch-when="2" md-swipe-left="next()" md-swipe-right="previous()">
-    <div class="container" id="iconContainer">
-      <div class="social col-md-3">
-        <a href="http://chrissing.azurewebsites.net" target="_blank"><img src="assets/pictures/blog.png"/>
-        <md-tooltip>
-          Blog
-        </md-tooltip></a>
-      </div>
-      <div class="social col-md-3">
-        <a href="http://github.com/singalongwithme" target="_blank"><img src="assets/pictures/git.png"/>
-        <md-tooltip>
-          GitHub
-        </md-tooltip></a>
-      </div>
-      <div class="social col-md-3">
-        <a href="http://linkedin.com/in/csinghavong" target="_blank"><img src="assets/pictures/linkedin.png" />
-        <md-tooltip>
-          Linkedin
-        </md-tooltip></a>
-      </div>
-      <div class="social col-md-3">
-        <a href="mailto:csinghavong@gmail.com" target="_blank"><img src="assets/pictures/email.png"/>
-        <md-tooltip>
-          Email
-        </md-tooltip></a>
-      </div>
-    </div>
-  </div>
-</ng-switch>
+</header>
+<div class="content">
+  <section class="bio">
+    <h2>About Me</h2><hr>
+    <p>My name is Christopher Singhavong and I'm a software engineer that sometimes dreams
+      in <strong>JavaScript</strong>. I enjoy creating interactive and responsive web designs without sacrificing the quality of the code. I like <strong>Angular</strong> and have made open-source contributions to <strong>Angular's Material Design</strong>.
+      <br><br>
+      I like to play basketball and sometimes, if the mood is right, pretend I'm John Mayer when playing guitar. Currently hacking in the Bay Area.
+    </p>
+  </section>
+  <section class="bio">
+    <h2>Projects</h2><hr>
+    <p><a href="http://github.com/areyouarobot/areyouarobot"><strong>AYAR?</strong></a> - Are You A Robot is a chat-based game that features a custom-built, artifically intelligent robot that can use text-parsing, markov chains, and machine learning to construct sentences based on user-prompted quesitons.</p>
+    <p><a href="http://github.com/closebuy/closebuy"><strong>Closebuy</strong></a> - Closebuy is a mobile marketplace that uses a Tinder-like interface to buy and sell.</p>
+    <p><a href="http://github.com/singalongwithme/flash"><strong>Flash!</strong></a> - Flash is a studying tool designed to imitate classic index cards.</p>
+  </section>
 </div>
+<footer>
+  <hr>
+  <p>&copy Christopher Singhavong</p>
+</footer>

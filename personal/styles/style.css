@@ -1,102 +1,121 @@
-.staticTabs #tab1-content {
-  text-align: center;
-  background-color: #3F51B5;
-  margin: 0 auto;
+body {
+  font-family: 'Lato', sans-serif;
 }
 
-.staticTabs #tab1-content .container {
-  margin: 0 auto;
-  width: 55vw;
+hr {
+  width: 50%;
 }
 
-.staticTabs #tab2-content {
-  background-color: #673AB7;
+.bio a {
+  color: black;
 }
 
-.staticTabs #tab3-content {
-  background-color: #ff5722;
+.bio a:hover {
+  text-decoration: none;
 }
 
-.staticTabs .tabpanel-container {
+#header {
+  background: url('http://www.ericgould.com/data/photos/133_1postcard_gg2.jpg');
+  padding-bottom: 50px;
+  height: 550px;
+}
+
+#about-me {
+  padding-top: 30px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -245px;
+  margin-left: -207px;
+}
+
+#profile-picture {
   display: block;
-  position: relative;
-  background: white;
-  border: 0px solid black;
-  height: 100vh;
-  overflow: hidden;
+  margin: 0 auto;
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
 }
 
-.staticTabs [role="tabpanel"] {
+#profile-container {
+  padding-top: 2.5px;
+  display: block;
+  margin: 0 auto;
+  height: 155px;
+  width: 155px;
+  border-radius: 100px;
+  background-color: white;
+}
+
+#name {
   color: white;
+  text-transform: uppercase;
+  font-size: 2em;
+  display: block;
+  text-align: center;
+}
+
+#title {
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+}
+
+.social {
+  text-align: center;
+}
+.social a {
+  display: inline-block;
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+  background-size: 40px 40px;
+}
+.linkedin {
+  background-image: url('http://www.lakshmanswaroop.com/files/img/linkedin-icon.png');
+}
+.github {
+  background-image: url('http://asap.github.io/flask-nyc/testing-selenium-jasmine/img/github.png');
+}
+.email {
+  background-image: url('http://wriber.com/static/images/banner-email-icon.png');
+}
+
+.content {
+  padding-top: 40px;
+  text-align: center;
+  position: relative;
+  background-color: white;
+}
+
+
+section {
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.bio p {
+  text-align: left;
+  font-size: 16px;
+}
+
+.projects {
+  margin: 0 auto;
+  width: 90%%;
+}
+
+.projects img {
+  margin: 0 auto;
+}
+
+footer hr {
   width: 100%;
-  height: 100%;
-  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
-  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
-  position: absolute;
+  margin: 0 auto;
 }
 
-.staticTabs [role="tabpanel"].ng-leave.ng-leave-active,
-  .staticTabs [role="tabpanel"].ng-enter {
-    top: -100vh;
-  }
-
-.staticTabs [role="tabpanel"].ng-leave,
-  .staticTabs [role="tabpanel"].ng-enter.ng-enter-active {
-    top: 0;
-  }
-
-.staticTabs [role="tabpanel"].ng-leave {
-  z-index: 100;
-}
-
-.staticTabs .tabpanel-container [role="tabpanel"] {
-  padding: 20px;
-}
-
-.staticTabs .after-tabs-area {
-  padding: 25px;
-}
-
-.staticTabs .after-tabs-area > span {
-  margin-top: 25px;
-  padding-right: 15px;
-  vertical-align: middle;
-  line-height: 30px;
-  height: 35px;
-}
-
-.staticTabs .after-tabs-area > md-checkbox {
-  margin-top: 26px;
-  margin-left: 0px;
-}
-
-.staticTabs .md-header {
-  background-color: #1976D2 !important;
-}
-
-.staticTabs md-tab {
-  color: #90CAF9 !important;
-}
-
-.staticTabs md-tab.active, .tabsdemoStaticTabs md-tab:focus {
-  color: white !important;
-}
-
-.staticTabs md-tab[disabled] {
-  opacity: 0.5;
-}
-
-.staticTabs .md-header .md-ripple {
-  border-color: #FFFF8D !important;
-}
-
-.staticTabs md-tabs-ink-bar {
-  background-color: #FFFF8D !important;
-}
-
-@font-face {
-  font-family: arena;
-  src: url('../assets/fonts/January Threed.ttf');
-  font-style: normal;
-  font-weight: normal;
+footer p {
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
 }
