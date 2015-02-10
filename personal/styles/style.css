@@ -6,6 +6,10 @@ hr {
   width: 50%;
 }
 
+h2 {
+  font-size: 24px;
+}
+
 .bio a {
   color: black;
 }
@@ -32,8 +36,8 @@ hr {
 #profile-picture {
   display: block;
   margin: 0 auto;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 150px;
 }
 
@@ -50,7 +54,7 @@ hr {
 #name {
   color: white;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 2.5em;
   display: block;
   text-align: center;
 }
