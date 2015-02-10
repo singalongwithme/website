@@ -21,13 +21,13 @@ hr {
 #header {
   background: url('http://www.ericgould.com/data/photos/133_1postcard_gg2.jpg');
   padding-bottom: 50px;
-  height: 600px;
+  height: 750px;
 }
 
 #about-me {
   padding-top: 30px;
   position: fixed;
-  top: 338px;
+  top: 425px;
   left: 47.5%;
   margin-top: -245px;
   margin-left: -207px;
