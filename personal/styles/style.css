@@ -18,8 +18,53 @@ hr {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .bio {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 700px ) {
+  .bio {
+    width: 100%;
+  }
+  body #header {
+    height: 600px;
+  }
+
+  #header #profile-picture {
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+  }
+
+  #header #profile-container {
+    height: 125px;
+    width: 126px;
+    border-radius: 70px;
+  }
+
+  #header #name {
+    font-size: 2em;
+  }
+
+  #header #title {
+    font-size: 1.5em;
+  }
+
+  #header .social a {
+    height: 40px;
+    width: 40px;
+    background-size: 40px 40px;
+  }
+}
+
 #header {
-  background: url('http://www.ericgould.com/data/photos/133_1postcard_gg2.jpg');
+  background-image: url('http://upload.wikimedia.org/wikipedia/commons/a/a4/Ggb_by_night.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
   padding-bottom: 50px;
   height: 750px;
 }
@@ -28,7 +73,7 @@ hr {
   padding-top: 30px;
   position: fixed;
   top: 425px;
-  left: 47.5%;
+  left: 50%;
   margin-top: -245px;
   margin-left: -207px;
 }
